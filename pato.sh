@@ -142,7 +142,7 @@ total_count=$(ls /mnt/ExtSSD/Podcast/파토의과학/*.mp3 | wc -l)
 echo "conTrackNo	$total_count" >> $temp_details
 cp $temp_details ./details.txt
 
-/mnt/ExtSSD/Podcast/makePodv4.sh
+/mnt/ExtSSD/Podcast/makePod.sh
 
 #tag 업데이트 후 파일 이동
 mv -n *.mp3 /mnt/ExtSSD/Podcast/$DIRNAME/
