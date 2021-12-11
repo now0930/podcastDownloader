@@ -36,7 +36,7 @@ detail.txt 파일을 각 폴더에 넣어 줌.
 cron으로 아래와 같이 실행.
 
 
-'''
+```
 $crontab -l
 #Edit this file to introduce tasks to be run by cron.
 
@@ -68,4 +68,4 @@ $crontab -l
 10 0 * * * /pato.sh
 #지구본연구소
 0 1 * * * /global_downloaderv2.sh
-'''
+```
