@@ -1,0 +1,9 @@
+SONGEXP	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f2 | sed 's/&[A-z]\{1,5\};//g')
+tmpSONGEXP	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f2)
+ARTISTEXP	"삼프로"
+ALBUMEXP	"경제의신과함께"
+mYearDateEXPtmp	"2020-1-1"
+mYearDateEXP	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f3 | cut -d',' -f2| cut -d' ' -f1-4)
+GENREEXP	"팟캐스트"
+FILETYPE	"mp3"
+PODCASTFILE	신과함께FileAndTitle.txt

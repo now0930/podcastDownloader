@@ -1,0 +1,12 @@
+SONGEXP	$(cat $EXTRAINFO | grep $FILE | cut -d',' -f2| sed 's/&[A-z]\{1,5\};//g')
+SONGEXPtmp	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f2| sed 's/&[A-z]\{1,5\};//g')
+ARTISTEXP	"최준영"
+ALBUMEXP	"지구본연구소"
+mYearDateEXPtmp	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f3 | cut -d',' -f2| cut -d' ' -f1-4)
+mYearDateEXP	$(cat $EXTRAINFO | grep $FILE | cut -d',' -f3 )
+GENREEXP	"팟캐스트"
+FILETYPE	"mp3"
+PODCASTFILE_podcast	지구본연구소FileAndTitle.txt
+PODCASTFILE	youtubeFileAndTitle.txt
+CONTINUE	yes
+conTrackNo	196

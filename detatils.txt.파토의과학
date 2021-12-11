@@ -1,0 +1,11 @@
+SONGEXP	$(cat $EXTRAINFO | grep $FILE | cut -d',' -f1)
+tmpSONGEXP	$(cat $EXTRAINFO | grep $FILE | cut -d$'\t' -f2)
+ARTISTEXP	"파토"
+ALBUMEXP	"파토가과학하고앉아있네"
+mYearDateEXPtmp	"2020-1-1"
+mYearDateEXP	$(cat $EXTRAINFO | grep $FILE | cut -d',' -f3)
+GENREEXP	"팟캐스트"
+FILETYPE	"mp3"
+PODCASTFILE	파토가과학하고앉아있네FileAndTitle.txt
+CONTINUE	yes
+conTrackNo	37
