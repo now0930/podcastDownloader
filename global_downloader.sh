@@ -177,7 +177,7 @@ echo "conTrackNo	$total_count" >> $temp_details
 #echo "total count " $total_count
 cp $temp_details ./details.txt
 
-/mnt/ExtSSD/Podcast/makePodv4.sh
+/mnt/ExtSSD/Podcast/makePod.sh
 #tag 업데이트 후 파일 이동
 
 #echo $temp_directory
