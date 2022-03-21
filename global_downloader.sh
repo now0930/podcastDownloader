@@ -134,7 +134,11 @@ for line in $(cat ${URLS}| cut -d',' -f1,4); do
 
 
 		#cron으로 적용시 fullpath 명시
-		/usr/local/bin/youtube-dl ${URL} -o $temp_file_vedio
+		#/usr/local/bin/youtube-dl ${URL} -o $temp_file_vedio
+		#youtube-dl 속도가 너무 느림
+		#yt-dlp로 변경
+		/usr/bin/yt-dlp ${URL} -o $temp_file_vedio
+
 
 		#출력이 어떻게 될지 모름..
 		#다음과 같이 정리
